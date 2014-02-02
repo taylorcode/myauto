@@ -94,10 +94,8 @@ passport.deserializeUser(function(id, done) {
 });
 */
 
-
-
 app.use(function(req, res) {
-    res.sendfile('dev/index.html');
+    res.sendfile('index.html');
 });
 
 var port = Number(process.env.PORT || 5000);
